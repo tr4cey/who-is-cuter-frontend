@@ -7,20 +7,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material';
-import {RouterModule} from '@angular/router';
+
 import { HomeComponent } from './home/home.component';
-import { AssignmentComponent } from './assignment/assignment.component';
 import { CreditsComponent } from './credits/credits.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
+import { ConclusionComponent } from './conclusion/conclusion.component';
+import { InstallationComponent } from './installation/installation.component';
+import { SummaryComponent } from './summary/summary.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AssignmentComponent,
     CreditsComponent,
     TutorialComponent,
+    ConclusionComponent,
+    InstallationComponent,
+    SummaryComponent
   ],
   imports: [
     BrowserModule,
@@ -31,14 +35,7 @@ import { TutorialComponent } from './tutorial/tutorial.component';
     MatButtonModule,
     MatIconModule,
     MatCardModule,
-    MatExpansionModule,
-    RouterModule.forRoot([
-		{ path: '', component: HomeComponent},
-		{ path: 'assignment', component: AssignmentComponent},
-		{ path: 'tutorial', component: TutorialComponent},
-		{ path: 'credits', component: CreditsComponent}
-			    
-    ])
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,22 +1,18 @@
 <mat-toolbar class="navbar">
-<router-outlet></router-outlet>
   <div>Who is Cuter?</div>
   <div>
-	<button mat-menu-item>
-    <span><a routerLink="">Home</a></span>
-    </button>
+	  <a routerLink="home"><button>Home</button></a>
     
-    <button mat-menu-item>
-    <span><a routerLink="assignment">Assignment</a></span>
-    </button>
+    <mat-menu #appMenu="matMenu">
+      <a routerLink="summary"><button mat-menu-item>Summary</button></a>
+      <a routerLink="installation"><button mat-menu-item>Installation</button></a>
+      <a routerLink="tutorial"><button mat-menu-item>Tutorial</button></a>
+      <a routerLink="conclusion"><button mat-menu-item>Conclusion</button></a>
+    </mat-menu>
     
-    <button mat-menu-item>
-    <span><a routerLink="tutorial">Tutorial</a></span>
-    </button>
+    <button [matMenuTriggerFor]="appMenu">Assignment</button>
     
-    <button mat-menu-item>
-    <span><a routerLink="credits">Credits</a></span>
-    </button>
-  
+    <a routerLink="credits"><button>Credits</button></a>
   </div>
 </mat-toolbar>
+<router-outlet></router-outlet>
