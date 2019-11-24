@@ -1,8 +1,22 @@
 <mat-toolbar class="navbar">
+<router-outlet></router-outlet>
   <div>Who is Cuter?</div>
   <div>
-    <span>Home</span>
-    <span>Assignment</span>
-    <span>Credits</span>
+	<button mat-menu-item>
+    <span><a routerLink="">Home</a></span>
+    </button>
+    
+    <button mat-menu-item>
+    <span><a routerLink="assignment">Assignment</a></span>
+    </button>
+    
+    <button mat-menu-item>
+    <span><a routerLink="tutorial">Tutorial</a></span>
+    </button>
+    
+    <button mat-menu-item>
+    <span><a routerLink="credits">Credits</a></span>
+    </button>
+  
   </div>
 </mat-toolbar>
