@@ -1,1 +1,72 @@
+<h3 align="center">Tutorial on How to Create a Simple Website Using Laravel and Angular</h3>
 
+<h4>Back-end Setup Steps</h4>
+
+<mat-horizontal-stepper>
+  <mat-step label="Step 1">
+    Make sure you have Laravel installed and configured before starting this tutorial
+  </mat-step>
+  <mat-step label="Step 2">
+    Start by creating a Laravel application, this step will create a folder where your project directories and files will be stored. Enter this command in the terminal:<br> <b>laravel new cps530-final-project</b>
+  </mat-step>
+  
+  <mat-step label="Step 3">
+    Next we want to setup our database. Enter this command:<br><b>php artisan make:migration create_todo_table</b>
+  </mat-step>
+  
+  <mat-step label="Step 4">
+    You will create a table with column names that are appropriate for your application. The table will be created in the migration file that was created in the previous step. After you create the table type this command in terminal:<br><b>php artisan migrate</b>
+    <br><br>
+    <p style="color:lightblue;"><b>In summary, this step creates a table in mysql</b></p>
+  </mat-step>
+   
+   <mat-step label="Step 5">
+     The last step for back-end is to create a database model for our application. The command for this is: <br><b>php artisan make:model Todolist</b>
+      <p style="color:lightblue;"><b>The back-end takes care of the API calls and http requests, and stores our data</b></p>
+   </mat-step>
+
+   <mat-step label="Step 6">
+     Before we start our front-end we need to type one more command into the terminal. This command will create a controller. In this file you will put all RESTful (Representational state transfer) services here that will communicate with the front-end. Command: <br><b>php artisan make:controller TodoController</b>
+ <p style="color:lightblue;"><b>All these commands should have been typed into the project folder. Make sure you are in the correct directory</b></p>
+   </mat-step>
+   
+</mat-horizontal-stepper>
+
+
+<h4>Front-end Setup Steps</h4>
+<mat-horizontal-stepper>
+  <mat-step label="Step 1">
+    Make sure you have Angular installed and configured before starting this tutorial
+  </mat-step>
+
+  <mat-step label="Step 2">
+    You want to setup the folder structure first in a way that you like and you think will be effective
+     <p style="color:lightblue;"><b>Usually each component will have its own folder, and there will be a folder for external sources like images and videos</b></p>
+  </mat-step>
+
+  <mat-step label="Step 3">
+    To de-clutter the code and to make it more reusable, a file for API calls should be made. This will be a .js file that contains functions using the $http() call. 
+  </mat-step>
+
+  <mat-step label="Step 4">
+    To create components you can enter this command into terminal: <br><b>ng -g componentName</b>
+     <p style="color:lightblue;"><b>The component name changes based on your preference and needs, for example we used tutorial, credits, instructions, etc., as our component names</b></p>
+  </mat-step>
+
+  <mat-step label="Step 5">
+    We want to create the main module file which will have the imports of materials and declarations for our components.
+  </mat-step>
+
+  <mat-step label="Step 6">
+    Create the files named index.html and index.php. In your index.php file write the tag <b>ng-view.</b>
+  </mat-step>  
+  
+  <mat-step label="Step 7">
+    If the website contains several components (pages), you want to use routing. This will allow you to link all your pages together. In your main module import AppRoutingModule. In the index.html file use the tag <b>a routerLink to connect the other components.</b>Usually you would have a button to navigate through the different pages.
+  </mat-step>
+
+  <mat-step label="Step 8">
+    The hardest parts are done. Now it is up to you to customize the site, and add images, videos, links and all the fun stuff. 
+  </mat-step>  
+
+</mat-horizontal-stepper>  
