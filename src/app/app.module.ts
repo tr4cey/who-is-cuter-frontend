@@ -6,7 +6,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import {MatToolbarModule} from '@angular/material';
+import {MatToolbarModule, MatStepperModule} from '@angular/material';
 
 import { HomeComponent } from './home/home.component';
 import { CreditsComponent } from './credits/credits.component';
@@ -42,6 +42,7 @@ import { PairService } from './shared/pair.service';
     MatExpansionModule,
     BrowserModule,
     HttpClientModule
+    MatStepperModule
   ],
   providers: [PictureService,PairService],
   bootstrap: [AppComponent]
