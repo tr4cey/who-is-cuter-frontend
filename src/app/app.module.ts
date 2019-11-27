@@ -41,7 +41,7 @@ import { PairService } from './shared/pair.service';
     MatCardModule,
     MatExpansionModule,
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
     MatStepperModule
   ],
   providers: [PictureService,PairService],

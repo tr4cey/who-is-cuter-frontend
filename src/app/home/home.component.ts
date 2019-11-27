@@ -30,7 +30,6 @@ export class HomeComponent implements OnInit {
 
     this.pairService.GetPair(pairId).subscribe((data: any) => {
       this.pair = data;
-      console.log(this.pair);
       this.getPicture1();
     })
   }
@@ -39,7 +38,6 @@ export class HomeComponent implements OnInit {
   {
     this.pictureService.GetPicture(this.pair.pic1_id).subscribe((data: any) => {
       this.picture1 = data;
-      console.log(this.picture1);
       this.getPicture2();
     })
   }
@@ -47,7 +45,6 @@ export class HomeComponent implements OnInit {
   {
     this.pictureService.GetPicture(this.pair.pic2_id).subscribe((data: any) => {
       this.picture2 = data;
-      console.log(this.picture2);
     })
   }
   
@@ -55,7 +52,6 @@ export class HomeComponent implements OnInit {
   {
     this.pairService.VotePic1(this.pair.id).subscribe((data: any) => {
       this.pair = data;
-      console.log(this.pair);
       this.printResults();
     })
   }
@@ -63,7 +59,6 @@ export class HomeComponent implements OnInit {
   {
     this.pairService.VotePic2(this.pair.id).subscribe((data: any) => {
       this.pair = data;
-      console.log(this.pair);
       this.printResults();
     })
   }
