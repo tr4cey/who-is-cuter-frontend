@@ -1,0 +1,26 @@
+#button1, #button2
+{
+    background-color: red;
+    text-align: center;
+    display: inline-block;
+}
+#para1
+{
+    background-color: blue;
+}
+#para2
+{
+    background-color: blueviolet;
+}
+#buttonContainer
+{
+    text-align: center;
+}
+h1
+{
+    text-align: center;
+}
+#reset
+{
+    background-color: yellow;
+}
