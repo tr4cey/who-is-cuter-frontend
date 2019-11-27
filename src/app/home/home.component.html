@@ -1,1 +1,12 @@
-<h1>Home</h1>
+<h1>Vote on which Animal is the cutest</h1>
+<div id="buttonContainer">
+    <button (click)="votePic1()" id="button1">
+        <img src="{{picture1.address}}" width="200" height="200" id="pic1">
+        <p id="para1">{{picture1.description}}</p>
+    </button>
+    <button (click)="votePic2()" id="button2">
+        <img src="{{picture2.address}}" width="200" height="200" id="pic2">
+        <p id="para2">{{picture2.description}}</p>
+    </button>
+    <div id="resetButton"></div>
+</div>

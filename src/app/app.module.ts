@@ -15,6 +15,10 @@ import { ConclusionComponent } from './conclusion/conclusion.component';
 import { InstallationComponent } from './installation/installation.component';
 import { SummaryComponent } from './summary/summary.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { PictureService } from './shared/picture.service';
+import { PairService } from './shared/pair.service';
+
 
 @NgModule({
   declarations: [
@@ -35,9 +39,11 @@ import { SummaryComponent } from './summary/summary.component';
     MatButtonModule,
     MatIconModule,
     MatCardModule,
-    MatExpansionModule
+    MatExpansionModule,
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [PictureService,PairService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
