@@ -9,6 +9,7 @@ import { TutorialComponent } from './tutorial/tutorial.component';
 import { ConclusionComponent } from './conclusion/conclusion.component';
 
 const routes: Routes = [
+  { path: '',     component: HomeComponent},
   { path: 'home', component: HomeComponent},
   { path: 'credits', component: CreditsComponent},
   { path: 'summary', component: SummaryComponent},
