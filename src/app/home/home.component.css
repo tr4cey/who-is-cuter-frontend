@@ -1,16 +1,45 @@
 #button1, #button2
 {
-    background-color: #35E8FA;
-    text-align: center;
-    display: inline-block;
+    background-color: #5085A5;
+    width: 50%;
+    height: 500px;
+    position: static;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #31708E;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
-#para1
+#buttonsTable
 {
-    background-color: blue;
+    width: 100%;
+    height: 500px;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
 }
-#para2
+#pic1, #pic2
 {
-    background-color: blueviolet;
+    max-width: 100%;
+    max-height: 96%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #31708E;
+    top: 0;
+}
+#para1, #para2
+{
+    background-color: #31708E;
+    position: relative;
+    bottom: 7px;
+    left: 0;
+    width:100%;
+    font-size: 16px;
+    color: #F7F9Fb;
+    margin: 0px;
+    padding: 0px;
 }
 #buttonContainer
 {
@@ -19,8 +48,7 @@
 h1
 {
     text-align: center;
-}
-#reset
-{
-    background-color: yellow;
+    font-size: 55px;
+    margin: 15px;
+    color: #F7F9Fb;
 }

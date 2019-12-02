@@ -7,6 +7,10 @@ p.title
 p.subtitle
 {
     font-weight: bold;
-    color: #22ADBA;
+    color: #31708E;
     font-size: 15px;
-}    
+}   
+#page
+{
+    background-color: #F7F9Fb;
+} 

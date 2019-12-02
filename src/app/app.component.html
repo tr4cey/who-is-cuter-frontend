@@ -1,7 +1,7 @@
 <mat-toolbar class="navbar">
   <div>Who is Cuter?</div>
-  <div>
-	  <a routerLink="home"><button>Home</button></a>
+  <div id="menuButtons">
+	  <a routerLink="home"><button id="home">Home</button></a>
     
     <mat-menu #appMenu="matMenu">
       <a routerLink="summary"><button mat-menu-item>Summary</button></a>
@@ -10,7 +10,7 @@
       <a routerLink="conclusion"><button mat-menu-item>Conclusion</button></a>
     </mat-menu>
     
-    <button [matMenuTriggerFor]="appMenu">Assignment</button>
+    <button [matMenuTriggerFor]="appMenu" id="assignment">Assignment</button>
     
     <a routerLink="credits"><button>Credits</button></a>
   </div>

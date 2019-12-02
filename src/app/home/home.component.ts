@@ -89,6 +89,11 @@ export class HomeComponent implements OnInit {
     totalVotes1Element.innerHTML = "Total Votes: " + p1Votes;
     totalVotes2Element.innerHTML = "Total Votes: " + p2Votes;
 
+    percent1Element.style.fontSize = '130px';
+    percent2Element.style.fontSize = '130px';
+    totalVotes1Element.style.fontSize = '50px';
+    totalVotes2Element.style.fontSize = '50px';
+
     var button1 = <HTMLInputElement>document.getElementById("button1");
     var button2 = <HTMLInputElement>document.getElementById("button2");
 
@@ -104,10 +109,12 @@ export class HomeComponent implements OnInit {
     var reset = <HTMLInputElement>document.createElement('button');
     reset.id = 'reset';
     reset.innerHTML = 'Next Pair';
-    // TO EDIT THE CSS OF THE RESET BUTTON WRITE LINES OF CODE LIKE THIS
-    reset.style.backgroundColor = 'yellow';
     reset.style.textAlign = 'center';
-    // ---------------------------------------------------------------
+    reset.style.width = '25%';
+    reset.style.height = '70px';
+    reset.style.margin = '7px';
+    reset.style.fontSize = '40px';
+
     reset.onclick = function()
     {
       window.location.reload();
