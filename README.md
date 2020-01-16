@@ -1,27 +1,26 @@
-# Cps530FinalProject
+# Who is Cuter - Angular Front-End 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
+Front-End Angular web application that gets and displays 2 photos of cute animals and allow the user to vote on which animal is cuter, updating the total number of votes and then displaying a new pair of photos. Backend code available <a href="https://github.com/tr4cey/who-is-cuter-frontend">Here</a>.
+
+### Prerequisites
+* [NodeJS](https://nodejs.org/)
+* [Angular](https://angular.io/)
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Authors
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* **Ryan Tracey** - [GitHub](https://github.com/tr4cey)
+* **Martha Dybas** - [GitHub](https://github.com/mdybas)
 
-## Running end-to-end tests
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## License
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
