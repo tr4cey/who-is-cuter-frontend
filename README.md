@@ -2,6 +2,8 @@
 
 Front-End Angular web application that gets and displays 2 photos of cute animals and allow the user to vote on which animal is cuter, updating the total number of votes and then displaying a new pair of photos. Backend code available <a href="https://github.com/tr4cey/who-is-cuter-frontend">Here</a>.
 
+Currently Available at: **Currently N/A, will hopefully be available soon**
+
 ### Prerequisites
 * [NodeJS](https://nodejs.org/)
 * [Angular](https://angular.io/)
